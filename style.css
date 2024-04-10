@@ -1,0 +1,88 @@
+
+
+
+
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.description {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Медиа-запросы для iPhone */
+
+/* iPhone 5/SE и аналогичные (ширина до 320px) */
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 14px; /* Уменьшаем размер шрифта для маленьких экранов */
+    }
+    .slider img {
+        width: 100%; /* Изображения в слайдере на всю ширину экрана */
+    }
+}
+
+/* iPhone 6/7/8 и аналогичные (ширина от 321px до 375px) */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    header, footer {
+        padding: 10px; /* Уменьшаем отступы в заголовке и подвале */
+    }
+}
+
+/* iPhone X и аналогичные (ширина от 376px до 414px) */
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    .description {
+        padding: 10px; /* Уменьшаем отступы в описании картины */
+    }
+}
+
+/* iPhone 12 и аналогичные (ширина от 415px до 390px) */
+@media only screen and (min-width: 415px) and (max-width: 390px) {
+    /* Можно добавить дополнительные стили для этого диапазона ширины */
+}
+
